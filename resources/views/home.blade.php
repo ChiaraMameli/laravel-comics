@@ -8,6 +8,7 @@
     <title>Comics</title>
 </head>
 <body>
+
 <header class="container">
         <nav>
             <a href="#">
@@ -22,5 +23,34 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <div id="background">
+            <span id="current-series">CURRENT SERIES</span>
+        </div>
+        <div class="container box">
+            @foreach($comics as $comic)
+                <div  class="comic-card">
+                    <figure>
+                        <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                    </figure>
+                    <figcaption>{{$comic['series']}}</figcaption>
+                </div>
+            @endforeach
+        </div>
+    </main>
+
+    <section id="banner-section">
+    <div class="container">
+        @foreach($banner_links as $link)
+            <figure>
+                <img src="{{$link['src']}}" alt="{{$link['text']}}">
+                <figcaption><a href="{{$link['url']}}">{{$link['text']}}</a></figcaption>
+            </figure>
+        @endforeach
+    </div>
+  </section>
+
+
 </body>
 </html>

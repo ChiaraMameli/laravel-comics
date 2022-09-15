@@ -49,3 +49,69 @@ header #nav-links li {
 header #nav-links li.active {
   border-bottom: 1px solid blue;
 }
+
+main {
+  background-color: #1C1C1C;
+}
+main #background {
+  height: 400px;
+  background-image: url(../images/jumbotron.jpg);
+  background-position: top;
+  position: relative;
+}
+main #background #current-series {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+  background-color: #1E82F6;
+  position: absolute;
+  bottom: -20px;
+  left: 120px;
+}
+main .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+main .comic-card {
+  flex-basis: calc(16.6666666667% - 20px);
+  padding-bottom: 50px;
+}
+main .comic-card img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+main .comic-card figcaption {
+  text-transform: capitalize;
+}
+
+#banner-section {
+  background-color: #1E82F6;
+  padding: 2rem 0;
+}
+#banner-section .container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#banner-section figure {
+  display: flex;
+}
+#banner-section figure img {
+  width: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#banner-section figure figcaption {
+  align-self: center;
+  margin-left: 1rem;
+  text-transform: capitalize;
+}
+#banner-section figure figcaption a {
+  color: #FFF;
+}

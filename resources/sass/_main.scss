@@ -1,0 +1,44 @@
+main {
+    background-color: #1C1C1C;
+
+    #background{
+        height: 400px;
+        background-image: url(../images/jumbotron.jpg);
+        background-position: top;
+        position: relative;
+        
+        #current-series {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 5px;
+            background-color: $color_blue;
+            position: absolute;
+            bottom: -20px;
+            left: 120px;
+        }
+    }
+
+    .box {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+
+    .comic-card{
+        flex-basis: calc((100% / 6) - 20px);
+        padding-bottom: 50px;
+
+
+        img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            object-position: 0% 0%;
+        }
+
+        figcaption{
+            text-transform: capitalize;
+        }
+        }
+}
