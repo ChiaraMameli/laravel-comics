@@ -74,11 +74,13 @@ main .box {
   justify-content: space-around;
   padding-top: 50px;
 }
-main .comic-card {
+main .comic-card,
+main .comic-card-price {
   flex-basis: calc(16.6666666667% - 20px);
   padding-bottom: 50px;
 }
-main .comic-card img {
+main .comic-card img,
+main .comic-card-price img {
   height: 200px;
   width: 200px;
   -o-object-fit: cover;
@@ -86,8 +88,31 @@ main .comic-card img {
   -o-object-position: 0% 0%;
      object-position: 0% 0%;
 }
-main .comic-card figcaption {
+main .comic-card figcaption,
+main .comic-card-price figcaption {
   text-transform: capitalize;
+}
+main .comic-card-price figure {
+  position: relative;
+}
+main .comic-card-price figure .price {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: transparent;
+}
+main .comic-card-price figure:hover {
+  cursor: pointer;
+}
+main .comic-card-price figure:hover .price {
+  color: red;
+  font-weight: 900;
+  text-shadow: 1px 1px 4px #fff;
+}
+main .comic-card-price figure:hover img {
+  filter: grayscale(100%);
 }
 
 #banner-section {

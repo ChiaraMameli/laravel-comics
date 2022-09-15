@@ -25,7 +25,8 @@ main {
         padding-top: 50px;
     }
 
-    .comic-card{
+    .comic-card,
+    .comic-card-price {
         flex-basis: calc((100% / 6) - 20px);
         padding-bottom: 50px;
 
@@ -40,5 +41,37 @@ main {
         figcaption{
             text-transform: capitalize;
         }
+
+    }
+
+    .comic-card-price {
+        figure{
+            position: relative;
+
+            .price {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                font-size: 3rem;
+                color: transparent;
+            }
+        &:hover{
+            cursor: pointer;
         }
-}
+
+        &:hover .price{
+            color: red;
+            font-weight: 900;
+            text-shadow: 1px 1px 4px #fff;
+        }
+
+        &:hover img {
+            filter: grayscale(100%);
+        }
+
+        }
+    
+        }
+        }

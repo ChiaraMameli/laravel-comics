@@ -21,3 +21,13 @@ Route::get('/', function () {
 
     return view('home', compact('header_links', 'comics', 'banner_links', 'footer_links'));
 });
+
+Route::get('/shop', function () {
+    $header_links = config('header_links');
+    $comics = config('comics');
+    $banner_links = config('banner_links');
+    $footer_links = config('footer_links');
+
+    return view('shop', compact('header_links', 'comics', 'banner_links', 'footer_links'));
+});
+

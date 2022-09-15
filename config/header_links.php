@@ -39,6 +39,6 @@ return [
           ],
           [
             'text' => 'Shop',
-            'url' => '#'
+            'url' => '/shop'
           ]
         ];

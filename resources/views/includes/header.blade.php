@@ -1,6 +1,6 @@
     <header class="container">
         <nav>
-            <a href="#">
+            <a href="{{url('/')}}">
                 <img src="{{asset('images/dc-logo.png')}}" alt="dc logo">
             </a>
             <div id="nav-links">
