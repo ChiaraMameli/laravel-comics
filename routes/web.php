@@ -17,5 +17,7 @@ Route::get('/', function () {
     $header_links = config('header_links');
     $comics = config('comics');
     $banner_links = config('banner_links');
-    return view('home', compact('header_links', 'comics', 'banner_links'));
+    $footer_links = config('footer_links');
+
+    return view('home', compact('header_links', 'comics', 'banner_links', 'footer_links'));
 });
