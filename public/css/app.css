@@ -27,6 +27,31 @@ a {
   margin: 0 auto;
 }
 
+.small-container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.wall-position {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-blue {
+  color: #1E82F6;
+}
+
+.m-b {
+  margin-bottom: 2rem;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -60,10 +85,18 @@ main {
   background-color: #1C1C1C;
 }
 main #background {
-  height: 400px;
+  min-height: 500px;
   background-image: url(../images/jumbotron.jpg);
   background-position: top;
   position: relative;
+}
+main #background.border-bottom {
+  border-bottom: 4.5rem solid #1E82F6;
+}
+main #background .thumb {
+  position: absolute;
+  top: 12rem;
+  left: 0;
 }
 main #background #current-series {
   font-size: 1.5rem;
@@ -96,7 +129,9 @@ main .comic-card-price img {
 }
 main .comic-card figcaption,
 main .comic-card-price figcaption {
+  margin-top: 0.5rem;
   text-transform: capitalize;
+  color: #fff;
 }
 main .comic-card-price figure {
   position: relative;
@@ -119,6 +154,66 @@ main .comic-card-price figure:hover .price {
 }
 main .comic-card-price figure:hover img {
   filter: grayscale(100%);
+}
+main #comic-detail {
+  padding: 3rem 0;
+  background-color: #fff;
+  color: #000;
+}
+main #comic-detail h1 {
+  font-weight: 600;
+  color: #123F5E;
+}
+main #comic-detail .availability-box {
+  padding: 1rem;
+  background-color: #55BA59;
+  display: flex;
+  border: 1px solid black;
+}
+main #comic-detail .availability-box .price-section {
+  color: #BAF67D;
+  flex-grow: 1;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+main #comic-detail .availability-box .availability-select {
+  padding-left: 1rem;
+  width: 10rem;
+}
+main #comic-detail .comic-description {
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+main .comic-table {
+  background-color: #F6F6F6;
+  color: #000;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+main .comic-table h3 {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  color: #123F5E;
+}
+main .comic-table .table-row {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+main .comic-table .table-row .table-column {
+  padding: 1rem 0;
+  flex-basis: 50%;
+}
+main .comic-table .talent {
+  flex-basis: 50%;
+}
+main .comic-table .specs {
+  padding-left: 1rem;
+  flex-grow: 1;
+}
+
+.white-main {
+  background-color: #fff;
 }
 
 #banner-section {

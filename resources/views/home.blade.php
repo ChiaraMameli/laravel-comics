@@ -6,12 +6,14 @@
                 <span id="current-series">CURRENT SERIES</span>
             </div>
             <div class="container box">
-                @foreach($comics as $comic)
+                @foreach($comics as $index => $comic)
                     <div  class="comic-card">
-                        <figure>
-                            <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-                        </figure>
-                        <figcaption>{{$comic['series']}}</figcaption>
+                        <a href="{{route('comics')}}">
+                            <figure>
+                                <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                            </figure>
+                            <figcaption>{{$comic['series']}}</figcaption>
+                        </a>
                     </div>
                 @endforeach
             </div>
