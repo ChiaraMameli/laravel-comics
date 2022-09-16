@@ -6,6 +6,7 @@
 
 body {
   color: #FFF;
+  font-family: sans-serif;
 }
 
 img {
@@ -46,8 +47,13 @@ header #nav-links li {
   cursor: pointer;
   text-align: center;
 }
-header #nav-links li.active {
-  border-bottom: 1px solid blue;
+header #nav-links a {
+  font-weight: 500;
+  padding-bottom: 2.4rem;
+}
+header #nav-links a:hover, header #nav-links a.active {
+  border-bottom: 3px solid #1E82F6;
+  color: #1E82F6;
 }
 
 main {
@@ -155,7 +161,7 @@ main .comic-card-price figure:hover img {
   flex-wrap: wrap;
 }
 #footer-top .container .list-column {
-  padding-left: 1rem;
+  padding-left: 3rem;
 }
 #footer-top .container .list-column h4 {
   font-size: 1.2rem;

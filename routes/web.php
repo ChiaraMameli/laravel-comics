@@ -20,7 +20,7 @@ Route::get('/', function () {
     $footer_links = config('footer_links');
 
     return view('home', compact('header_links', 'comics', 'banner_links', 'footer_links'));
-});
+})->name('home');
 
 Route::get('/shop', function () {
     $header_links = config('header_links');
@@ -29,5 +29,5 @@ Route::get('/shop', function () {
     $footer_links = config('footer_links');
 
     return view('shop', compact('header_links', 'comics', 'banner_links', 'footer_links'));
-});
+})->name('shop');
 

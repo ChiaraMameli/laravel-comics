@@ -23,9 +23,16 @@ header {
         cursor: pointer;
         text-align: center;  
         
-        &.active {
-        border-bottom: 1px solid blue;
-        }
+    }
+    a {
+        font-weight: 500;
+        padding-bottom: 2.4rem;
+        
+        &:hover,
+        &.active{
+            border-bottom: 3px solid $color_blue;
+            color: $color_blue;
+        }}
+
         }
     }
-}
