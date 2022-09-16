@@ -31,14 +31,13 @@ Route::get('/shop', function () {
     return view('shop', compact('header_links', 'comics', 'banner_links', 'footer_links'));
 })->name('shop');
 
-Route::get('/comics/0', function () {
+Route::get('/comics/{id}', function ($id) {
     $header_links = config('header_links');
     $banner_links = config('banner_links');
     $footer_links = config('footer_links');
 
     $comics = config('comics');
-    $comic = $comics[0];
+    $comic = $comics[$id];
     
-
     return view('comics', compact('header_links', 'comics', 'banner_links', 'footer_links', 'comic'));
 })->name('comics');

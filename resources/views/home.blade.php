@@ -6,9 +6,9 @@
                 <span id="current-series">CURRENT SERIES</span>
             </div>
             <div class="container box">
-                @foreach($comics as $index => $comic)
+                @foreach($comics as $id => $comic)
                     <div  class="comic-card">
-                        <a href="{{route('comics')}}">
+                        <a href="{{route('comics', ['id' => $loop->index])}}">
                             <figure>
                                 <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
                             </figure>
